@@ -54,7 +54,7 @@ module.exports = function (client) {
         CommandsList.push(command.data.toJSON());
         console.log(`Initialized ${file} Snippet Command`);
     });
-
+    
     // Load events
     events.forEach(file => {
         client.on(file, require(`../events/${file}`).bind(null, client));

@@ -124,10 +124,10 @@ module.exports = async function (client, message) {
                 }
 
                 let ticketCountEmbed = new Discord.MessageEmbed()
-					.setTitle(lang.active_tickets["player-active-title"] != "" ? lang.active_tickets["player-active-title"].replace(`{{COUNT}}`, TicketCount) : `You currently have ${TicketCount} ticket(s) being looked at by the team.`)
-					.setDescription(lang.active_tickets["player-active-description"] != "" ? lang.active_tickets["player-active-description"].replace(`{{TICKETCHANNEL}}`, `<#${client.config.channel_ids.post_embed_channel_id}>`) : `If you would like to open a ticket, please head to <#${client.config.channel_ids.post_embed_channel_id}>.\n`)
-					.setColor(client.config.bot_settings.main_color)
-					.setFooter({text: client.user.username, iconURL: client.user.displayAvatarURL()})
+                    .setTitle(lang.active_tickets["player-active-title"] != "" ? lang.active_tickets["player-active-title"].replace(`{{COUNT}}`, TicketCount) : `You currently have ${TicketCount} ticket(s) being looked at by the team.`)
+                    .setDescription(lang.active_tickets["player-active-description"] != "" ? lang.active_tickets["player-active-description"].replace(`{{TICKETCHANNEL}}`, `<#${client.config.channel_ids.post_embed_channel_id}>`) : `If you would like to open a ticket, please head to <#${client.config.channel_ids.post_embed_channel_id}>.\n`)
+                    .setColor(client.config.bot_settings.main_color)
+                    .setFooter({text: client.user.username, iconURL: client.user.displayAvatarURL()})
 
                 await message.channel.send({embeds: [ticketCountEmbed]})
 
@@ -139,8 +139,16 @@ module.exports = async function (client, message) {
             let command_name = message.content.toLowerCase().slice(client.config.bot_settings.prefix.length).trim().split(" ")[0];
             if (!client.commands.has(command_name)) return;
             if (command_name.toLowerCase() === "ticketinfo" || command_name.toLowerCase() === "ticketcheetos" || command_name.toLowerCase() === "ticketuserinfo") return;
-            client.commands.get(command_name)(client, message);
 
+            const command = client.commands.get(command_name);
+            if (command && 'execute' in command) {
+                try {
+                    await command.execute(client, message);
+                } catch (error) {
+                    console.error(`Error executing ${command_name}:`, error);
+                    message.reply('There was an error trying to execute that command!');
+                }
+            }
         }
         
     } catch (exception) {

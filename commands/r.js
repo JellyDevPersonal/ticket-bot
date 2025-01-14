@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const config = require('../config/config.json');
 const func = require("../utils/functions.js");
 const lang = require("../content/handler/lang.json");
+const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
     name: 'r',
@@ -256,5 +257,9 @@ module.exports = {
         } else {
             await interaction.reply({ content: 'This command can only be used in ticket channels within designated categories.', ephemeral: true });
         }
-    }
+    },
+    data: new SlashCommandBuilder()
+        .setName('r')
+        .setDescription('Do not use, for automation purposes only. User !r to reply to tickets.')
+        
 };
