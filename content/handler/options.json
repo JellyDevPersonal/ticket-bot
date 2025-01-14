@@ -1,0 +1,40 @@
+{
+	"options": {
+		"General Support": {
+			"abbreviation": "general",
+			"question_file": "general.json",
+			"unique_button_identifier": "button1",
+			"button_type": "SECONDARY",
+			"button_emoji": ""
+		},
+		"Player Report": {
+			"abbreviation": "report",
+			"question_file": "playerreport.json",
+			"unique_button_identifier": "button2",
+			"button_type": "SECONDARY",
+			"button_emoji": ""
+		},
+		"Ban or Mute Appeal": {
+			"abbreviation": "appeal",
+			"question_file": "appeal.json",
+			"unique_button_identifier": "button3",
+			"button_type": "DANGER",
+			"button_emoji": ""
+		},
+		"VIP Related": {
+			"abbreviation": "billing",
+			"question_file": "VIP.json",
+			"unique_button_identifier": "button4",
+			"button_type": "PRIMARY",
+			"button_emoji": ""
+		},		
+		"Staff Application": {
+			"abbreviation": "application",
+			"question_file": "application.json",
+			"unique_button_identifier": "button5",
+			"button_type": "SUCCESS",
+			"button_emoji": ""
+		}
+		
+	}
+}

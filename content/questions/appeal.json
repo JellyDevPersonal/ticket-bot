@@ -1,0 +1,64 @@
+{
+	"questions": [
+		"Why do you think you were banned?",
+		"What is your SteamID64 or link to your Steam profile.",
+		"Why do you think should you be unbanned?"
+	],
+	"pre-message": "Please answer the following questions with as much information as possible. Failure to fully answer the questions or not truthfully answering the questions will automatically deny your appeal.",
+	"post-message": "Your appeal has been submitted and will be reviewed by RustNite staff, if we need more information we will reach out in this DM.",
+	"accept-message": "Your ban appeal has been approved and you are welcome to rejoin our server(s).",
+	"deny-message": "Your ban appeal has been denied. We have enough evidence to justify your ban, and it will remain. Please note opening new appeal tickets will not change this outcome, appeal descisions are final.",
+	"post-channel": "1321958592731156561",
+	"transcript-channel": "1321958766983250041",
+	"ticket-category": "1321985934203555961",
+	"access-role-id": ["1321906918947688530"],
+	"role-pings-on-new-ticket": true,
+	"check-cheetos": false,
+	"check-steamid": false,
+	"display-user-discord-info": true,
+	"needVerified": false,
+	"allow_feedback": false,
+	"open-as-ticket": false,
+	"max-active-tickets": 1,
+
+	"check-server-activity": {
+		"enabled": false,
+		"show-only-online-server": false,
+		"show-online-status": true,
+		"show-hours": true,
+		"show-last-seen": true
+	},
+
+	"active_ticket_button_content": {
+		"accept": {
+			"title": "Accept Appeal",
+			"emoji": "",
+			"enabled": true
+		},
+		"deny": {
+			"title": "Deny Appeal",
+			"emoji": "",
+			"enabled": true
+		},
+		"custom_response_message": {
+			"title": "Close with Custom Reply",
+			"emoji": "",
+			"enabled": true
+		},
+		"make_a_ticket": {
+			"title": "Open a Ticket",
+			"emoji": "",
+			"enabled": true
+		}
+	},
+
+	"feedback_questions": [
+		"How was your experience in your ticket?",
+		"What would you recommend for improvements?",
+		"What you rate your experience out of 5?",
+		"Would you be happy to use our system again?",
+		"You can only have 5 questions in your forms."
+	],
+	"successful_feedback_message": "Thanks for your feedback! It really helps us make our systems better for everyone."
+	
+}

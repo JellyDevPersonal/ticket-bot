@@ -1,0 +1,69 @@
+{
+	"bot_settings": {
+		"prefix": "!",
+		"main_color": "#208cdd",
+		"ownerID": "",
+		"keep_embed_channel_clean": true
+	},
+
+	"activityInfo": {
+		"cycleTimeinSeconds": 10,
+		"messages": ["RustNite Servers"],
+		"type": "Playing"
+	},
+
+	"role_ids": {
+		"role_ids_ban_cmd": ["1321906737363681371"],
+		"role_ids_info_cmd": ["1321906737363681371"],
+		"role_ids_stats_cmd": ["1321906737363681371"],
+		"role_ids_wipestats_cmd": ["1321906737363681371"],
+		"role_ids_blacklist_cmd": ["1321906737363681371"],
+		"default_admin_role_id": "1321906737363681371",
+		"ticket_blacklisted_role_id": "1321950082261848165"
+	},
+
+	"channel_ids": {
+		"public_guild_id": "1321906177713504256",
+		"staff_guild_id": "1321906177713504256",
+		"error_channel": "1321925154770522203",
+		"feedback_channel": "1321925204745916456",
+		"post_embed_channel_id": "1321925265747611770"
+	},
+
+	"linking_settings": {
+		"linkingSystem": 1,
+		"verify_link": "https://rustnite.com/link"
+	},
+
+	"active_ticket_settings": {
+		"replyName": "RustNite Support",
+		"ticket_user_embed_color": "#208cdd",
+		"ticket_staff_embed_color": "#89CFF0",
+		"staff_ticket_replies_in_embed": true,
+		"sendUserCloseReason": true
+	},
+
+	"timeouts": {
+		"embed_channel_message_delete_time_in_minutes": 300,
+		"timeout_cooldown_in_seconds": 60,
+		"user_error_message_timeout_in_seconds": 15,
+		"close_command_timeout_in_seconds": 5
+	},
+
+	"file_extensions": {
+		"allowed_file_extensions_enabled": true,
+		"allowed_file_extensions": ["png", "jpeg", "txt", "jpg", "gif", "mp4", "mp3"]
+	},
+
+	"tokens": {
+		"Linking_System_API_Key_Or_Secret": "",
+		"cheetosToken": "",
+		"steamToken": "63BC7356CB92D0B235DC7A6F739B83D4",
+		"battlemetricsToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImZkOTU3MGQyZmQzMjhjNmIiLCJpYXQiOjE3MzUyMzc4MDIsIm5iZiI6MTczNTIzNzgwMiwiaXNzIjoiaHR0cHM6Ly93d3cuYmF0dGxlbWV0cmljcy5jb20iLCJzdWIiOiJ1cm46dXNlcjoxMTEwODAifQ.DwIbLQWSFFQg6zmgMtGxDpJ4j7G1UVumFbNJLi7ovNc"
+	},
+
+	"misc": {
+		"bm_org_id": "59305"
+	}
+
+}

@@ -1,0 +1,64 @@
+{
+	"questions": [
+		"What is the subject of your ticket?",
+		"Please descibe the issue you are facing or question(s) you have in as much detail as possible.",
+		"Is there anything else you would like to add?"
+		
+	], 
+	"pre-message": "Please answer the following questions to open a general support ticket.",
+	"post-message": "Your ticket has been successfully submitted, a member of the RustNite Staff Team will reach out shortly.",
+	"accept-message": "We have reviewed your ticket and have taken action to remedy the issue you reported. If you need any additional help please open a new ticket.",
+	"deny-message": "Your ticket has been denied by a RustNite Staff member.",
+	"post-channel": "1321977714911219752",
+	"transcript-channel": "1321958766983250041",
+	"ticket-category": "1321961780079099904",
+	"access-role-id": ["1321906960601190440"],
+	"role-pings-on-new-ticket": true,
+	"check-cheetos": false,
+	"check-steamid": false,
+	"display-user-discord-info": true,
+	"needVerified": false,
+	"allow_feedback": false,
+	"open-as-ticket": false,
+	"max-active-tickets": 5,
+
+	"check-server-activity": {
+		"enabled": false,
+		"show-only-online-server": true,
+		"show-online-status": true,
+		"show-hours": true,
+		"show-last-seen": true
+	},
+
+	"active_ticket_button_content": {
+		"accept": {
+			"title": "Resolved",
+			"emoji": "",
+			"enabled": true
+		},
+		"deny": {
+			"title": "Ticket Denied",
+			"emoji": "",
+			"enabled": true
+		},
+		"custom_response_message": {
+			"title": "Close With Custom Reply",
+			"emoji": "",
+			"enabled": true
+		},
+		"make_a_ticket": {
+			"title": "Open a Ticket",
+			"emoji": "",
+			"enabled": true
+		}
+	},
+
+	"feedback_questions": [
+		"How was your experience in your ticket?",
+		"What would you recommend for improvements?",
+		"What you rate your experience out of 5?",
+		"Would you be happy to use our system again?",
+		"You can only have 5 questions in your forms."
+	],
+	"successful_feedback_message": "Thanks for your feedback! It really helps us make our systems better for everyone."
+}
